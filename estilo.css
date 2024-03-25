@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+header {
+    background-color: red;
+    padding: 9px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Mine', Courier, monospace;
+    animation: piscar 1s infinite;
+
+}
+
+p {
+    max-width: 50ch;
+    text-align: unset;
+
+}
+
+@keyframes piscar {
+    100% {
+        color: black;
+        opacity: 1;
+    }
+    100% {
+        color: white;
+        opacity: 0.5;
+    }
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navp {
+    background-color: #433d3d;
+    color: #b7aea5;
+    padding: 20px;
+    font-size: 20pt;
+    font-family: Mine ;
+    transition: all 400ms ease-in-out;
+    text-align: center;
+}
+
+.navp:hover {
+    transform: scale(1.2);
+    background-color: #b7aea5;
+    color: red;
+}
+
+.ProdutosL {
+    width: 100%;
+    max-width: 300px;
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+footer {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Mine' ;
+    src: url(Minecrafter.Alt.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    border: 5px solid #ff0000; 
+    padding: 20px; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+.button{
+    background-color: black;
+    color: aquamarine;
+    border-color: aquamarine;
+    border-radius: 3px;
+    top: 20px;
+    left: 10px;
+    position: relative;
+    border-style: solid;
+    transition: all 350ms ease-in-out;
+    transform: scale(0.99);
+    text-decoration: none;
+}
+
+.button:hover{
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+    background-color: aquamarine;
+    color: black;
+    transform: scale(1.1);
+}
+
+.button:focus{
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+    background-color: #ef233c;
+    border-color:#ef233c ;
+    color: black;
+    transform: scale(1.1);
+}
